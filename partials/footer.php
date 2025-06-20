@@ -66,7 +66,6 @@
                             <li class="nav-item"><a href="demo-lawyer.html" class="nav-link">Home</a></li>
                             <li class="nav-item"><a href="demo-lawyer-about.html" class="nav-link">About</a></li>
                             <li class="nav-item"><a href="demo-lawyer-practice-areas.html" class="nav-link">Practice areas</a></li>
-                            <li class="nav-item"><a href="demo-lawyer-attorneys.html" class="nav-link">Attorneys</a></li>
                             <li class="nav-item"><a href="demo-lawyer-journal.html" class="nav-link">Journal</a></li> 
                             <li class="nav-item"><a href="demo-lawyer-contact.html" class="nav-link">Contact</a></li>
                         </ul>
