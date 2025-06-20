@@ -4,7 +4,7 @@
 $page = isset($_GET['page']) ? $_GET['page'] : 'home';
 
 $allowed_pages = [
-    'home'
+    'home',
     'login',
 ];
 
