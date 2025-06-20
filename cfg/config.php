@@ -1,7 +1,7 @@
 <?php
 return [
     'host' => 'localhost',
-    'user' => 'dbuser',
-    'pass' => 'dbpass',
-    'name' => 'dbname',
+    'user' => 'm4m',
+    'pass' => 'm4m4321',
+    'name' => 'm4m_4',
 ];
