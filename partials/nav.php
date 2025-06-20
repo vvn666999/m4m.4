@@ -3,7 +3,7 @@
             <nav class="navbar navbar-expand-lg header-transparent bg-transparent disable-fixed border-bottom border-color-transparent-white-light">
                 <div class="container-fluid"> 
                     <div class="col-auto">
-                        <a class="navbar-brand" href="demo-lawyer.html">
+                        <a class="navbar-brand" href="index.php?page=home" data-link>
                             <img src="images/demo-lawyer-logo-white.png" data-at2x="images/demo-lawyer-logo-white@2x.png" alt="" class="default-logo">
                             <img src="images/demo-lawyer-logo-black.png" data-at2x="images/demo-lawyer-logo-black@2x.png" alt="" class="alt-logo">
                             <img src="images/demo-lawyer-logo-black.png" data-at2x="images/demo-lawyer-logo-black@2x.png" alt="" class="mobile-logo">
@@ -18,7 +18,7 @@
                         </button>
                         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                             <ul class="navbar-nav"> 
-                                <li class="nav-item"><a href="demo-lawyer.html" class="nav-link">Home</a></li>
+                                <li class="nav-item"><a href="index.php?page=home" data-link class="nav-link">Home</a></li>
                                 <li class="nav-item"><a href="demo-lawyer-about.html" class="nav-link">About</a></li>
                                 <li class="nav-item dropdown dropdown-with-icon-style02">
                                     <a href="demo-lawyer-practice-areas.html" class="nav-link">Practice areas</a>
@@ -33,7 +33,7 @@
                                 </li>
                                 <li class="nav-item"><a href="demo-lawyer-journal.html" class="nav-link">Journal</a></li> 
                                 <li class="nav-item"><a href="demo-lawyer-contact.html" class="nav-link">Contact</a></li>
-                                <li class="nav-item"><a href="login.php" class="nav-link">Login</a></li>
+                                <li class="nav-item"><a href="index.php?page=login" class="nav-link" data-link>Login</a></li>
                             </ul>
                         </div>
                     </div>
