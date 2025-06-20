@@ -1,7 +1,4 @@
-<?php
-$page_title = 'Login';
-ob_start();
-?>
+
         <!-- start page title -->
         <section class="page-title-separate-breadcrumbs bg-dark-gray ipad-top-space-margin cover-background" style="background-image: url(https://placehold.co/1920x640)">
             <div class="opacity-full-dark bg-gradient-dark-transparent"></div>
@@ -54,7 +51,4 @@ ob_start();
             </div>
         </section>
         <!-- end login section -->
-<?php
-$content = ob_get_clean();
-include __DIR__ . '/../templates/base.php';
-?>
+
