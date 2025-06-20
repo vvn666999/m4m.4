@@ -1,5 +1,5 @@
 <?php
-$page_title = 'Login / Register';
+$page_title = 'Login';
 ob_start();
 ?>
         <!-- start page title -->
@@ -11,7 +11,7 @@ ob_start();
                         <h1 class="text-white alt-font fw-500 ls-minus-1px mb-0 font-style-italic" data-fancy-text='{ "opacity": [0, 1], "delay": 500, "speed": 50, "string": ["Account access"], "easing": "easeOutQuad" }'></h1>
                     </div>
                     <div class="col-xxl-4 col-lg-5 col-md-7 col-sm-9 last-paragraph-no-margin" data-anime='{ "opacity": [0, 1], "delay": 500, "easing": "easeOutQuad" }'>
-                        <p class="text-white opacity-8">Login to manage your account or create a new one.</p>
+                        <p class="text-white opacity-8">Login to manage your account.</p>
                     </div>
                 </div>
             </div>
@@ -24,14 +24,14 @@ ob_start();
                     <div class="col-12 breadcrumb breadcrumb-style-01 fs-15">
                         <ul>
                             <li><a href="index.php">Home</a></li>
-                            <li>Login / Register</li>
+                            <li>Login</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
         <!-- end breadcrumbs -->
-        <!-- start login/register section -->
+        <!-- start login section -->
         <section class="bg-very-light-gray">
             <div class="container">
                 <div class="row justify-content-center">
@@ -50,32 +50,10 @@ ob_start();
                             </form>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="p-13 md-p-10 bg-white contact-form-style-04">
-                            <h3 class="d-inline-block fw-600 text-dark-gray mb-8 ls-minus-1px">Register</h3>
-                            <form action="index.php?route=register" method="post">
-                                <label class="text-dark-gray mb-10px fw-500">Full name<span class="text-red">*</span></label>
-                                <input class="mb-20px bg-very-light-gray form-control required" type="text" name="full_name" placeholder="Enter your full name" />
-                                <label class="text-dark-gray mb-10px fw-500">Email address<span class="text-red">*</span></label>
-                                <input class="mb-20px bg-very-light-gray form-control required" type="email" name="email" placeholder="Enter your email" />
-                                <label class="text-dark-gray mb-10px fw-500">Phone</label>
-                                <input class="mb-20px bg-very-light-gray form-control" type="text" name="phone" placeholder="Enter your phone" />
-                                <label class="text-dark-gray mb-10px fw-500">Password<span class="text-red">*</span></label>
-                                <input class="mb-20px bg-very-light-gray form-control required" type="password" name="password" placeholder="Enter your password" />
-                                <label class="text-dark-gray mb-10px fw-500">Type</label>
-                                <input class="mb-20px bg-very-light-gray form-control" type="text" name="type" placeholder="Enter user type" />
-                                <div class="position-relative terms-condition-box text-start d-inline-block mb-20px">
-                                    <label><input type="checkbox" name="is_active" value="1" class="check-box align-middle" checked> Active</label>
-                                </div>
-                                <button class="btn btn-large btn-round-edge btn-dark-gray btn-box-shadow w-100 mb-20px" type="submit">Register now</button>
-                                <div class="form-results mt-20px d-none"></div>
-                            </form>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
-        <!-- end login/register section -->
+        <!-- end login section -->
 <?php
 $content = ob_get_clean();
 include __DIR__ . '/../templates/base.php';
