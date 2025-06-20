@@ -1,7 +1,4 @@
-<?php
-$page_title = 'Register';
-ob_start();
-?>
+
 <section class="bg-very-light-gray">
     <div class="container">
         <div class="row justify-content-center">
@@ -29,7 +26,4 @@ ob_start();
         </div>
     </div>
 </section>
-<?php
-$content = ob_get_clean();
-include __DIR__ . '/../templates/base.php';
-?>
+
