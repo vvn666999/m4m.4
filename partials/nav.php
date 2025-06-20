@@ -33,6 +33,7 @@
                                 </li>
                                 <li class="nav-item"><a href="demo-lawyer-journal.html" class="nav-link">Journal</a></li> 
                                 <li class="nav-item"><a href="demo-lawyer-contact.html" class="nav-link">Contact</a></li>
+                                <li class="nav-item"><a href="login.php" class="nav-link">Login</a></li>
                             </ul>
                         </div>
                     </div>
