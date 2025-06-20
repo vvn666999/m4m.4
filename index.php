@@ -1,17 +1,24 @@
 <?php
-// Simple PHP router for SPA
+require_once __DIR__ . '/cfg/env.php';
+require_once __DIR__ . '/lib/Router.php';
+require_once __DIR__ . '/lib/Database.php';
+require_once __DIR__ . '/mdl/UserModel.php';
+require_once __DIR__ . '/controllers/UserController.php';
 
-$page = isset($_GET['page']) ? $_GET['page'] : 'home';
+$config = require __DIR__ . '/cfg/config.php';
+$db = new Database($config);
+$userModel = new UserModel($db);
+$controller = new UserController($userModel);
 
-$allowed_pages = [
-    'home',
-    'login',
-];
+$router = new Router();
 
-if (!in_array($page, $allowed_pages)) {
-    http_response_code(404);
-    $page = 'home'; // fallback to home
-}
+$router->add('GET', '/', function() {
+    require __DIR__ . '/pages/home.php';
+});
+$router->add('GET', '/login', [$controller, 'showLogin']);
+$router->add('POST', '/login', [$controller, 'login']);
+$router->add('GET', '/register', [$controller, 'showRegister']);
+$router->add('POST', '/register', [$controller, 'register']);
 
-include __DIR__ . '/pages/' . $page . '.php';
-?>
+$path = $_GET['route'] ?? '/';
+$router->dispatch($_SERVER['REQUEST_METHOD'], $path);
